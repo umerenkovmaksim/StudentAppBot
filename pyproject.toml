@@ -1,0 +1,45 @@
+[project]
+name = "studentappbot"
+version = "0.1.0"
+description = "Timiryazev student bot in Telegram"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiogram>=3.18.0",
+    "requests>=2.32.3",
+    "ruff>=0.11.0",
+]
+
+[tool.ruff]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["E", "W", "C", "F", "N", "ASYNC", "C4", "COM", "PIE", "T20", "RET", "SIM", "TID", "TC", "ARG", "PL", "UP"]
+ignore = ["E501"]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
