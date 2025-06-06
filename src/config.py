@@ -1,3 +1,2 @@
 BOT_TOKEN = "7783965633:AAFRVdSzI6wcx86Lh1ZOBhJUPgaEH_d1cUE"
-API_URL = "http://127.0.0.1:8000/"
-
+API_URL = "http://localhost:8000/"

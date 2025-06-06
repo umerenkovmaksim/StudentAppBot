@@ -1,0 +1,7 @@
+{
+    "codeium.disableSupercomplete": true,
+    "codeium.enableConfig": {
+
+        "*": false
+    }
+}

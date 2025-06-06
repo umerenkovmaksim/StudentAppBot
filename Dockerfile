@@ -1,10 +1,16 @@
-FROM python:3.12-slim
+FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+
+ENV UV_COMPILE_BYTECODE=1
+ENV UV_LINK_MODE=copy
 
 WORKDIR /app
-COPY . /app
 
-RUN pip install -r requirements.txt
+COPY pyproject.toml uv.lock ./
+
+RUN uv sync
+
+COPY . .
 
 EXPOSE 6000
 
-CMD ["python", "src/bot.py"]
+CMD ["uv", "run", "python", "src/bot.py"]

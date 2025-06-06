@@ -37,7 +37,7 @@ exclude = [
 indent-width = 4
 
 [tool.ruff.lint]
-select = ["E", "W", "C", "F", "N", "ASYNC", "C4", "COM", "PIE", "T20", "RET", "SIM", "TID", "TC", "ARG", "PL", "UP"]
+select = ["E", "W", "C", "F", "N", "ASYNC", "C4", "COM", "PIE", "T20", "RET", "SIM", "TID", "TC", "ARG", "PL", "UP", "FA", "I"]
 ignore = ["E501"]
 
 # Allow fix for all enabled rules (when `--fix`) is provided.
